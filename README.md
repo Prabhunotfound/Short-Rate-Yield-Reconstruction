@@ -46,7 +46,7 @@ pip install numpy pandas matplotlib seaborn scipy gdown os
 ## Project Structure
 
 ```
-├── FinClub_Project.ipynb       # Full pipeline — EDA to hyperparameter tuning
+├── Project.ipynb               # Full pipeline 
 ├── train_data.csv              # Daily zero-coupon yields, 9 maturities (training)
 ├── test_data.csv               # Out-of-sample yield data, all maturities
 ├── test_data_3M.csv            # Test set with 3M rate only (model input)
