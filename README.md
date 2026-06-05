@@ -4,7 +4,7 @@ A pipeline for reconstructing the full US zero-coupon yield curve from the 3-mon
 
 ---
 
-> For a detailed breakdown of the methodology, design choices, and results, see **[Summary.md](./Summary.md)**.
+ For a detailed breakdown of the methodology, design choices, and results, see **[Summary.md](./Summary.md)**.
 
 ---
 
