@@ -4,6 +4,10 @@ A pipeline for reconstructing the full US zero-coupon yield curve from the 3-mon
 
 ---
 
+> For a detailed breakdown of the methodology, design choices, and results, see **[Summary.md](./Summary.md)**.
+
+---
+
 ## Setup Instructions
 
 ### 1. Cloning the Repo
@@ -38,7 +42,7 @@ conda activate rate-model
 ### 3. Install Dependencies
 
 ```bash
-pip install numpy pandas matplotlib seaborn scipy gdown os
+pip install numpy pandas matplotlib seaborn scipy gdown
 ```
 
 ---
@@ -46,11 +50,12 @@ pip install numpy pandas matplotlib seaborn scipy gdown os
 ## Project Structure
 
 ```
-├── Project.ipynb               # Full pipeline 
+├── Project.ipynb               # Full pipeline
 ├── train_data.csv              # Daily zero-coupon yields, 9 maturities (training)
 ├── test_data.csv               # Out-of-sample yield data, all maturities
 ├── test_data_3M.csv            # Test set with 3M rate only (model input)
 ├── plots/                      # Figures auto-saved during notebook execution
+├── ABOUT.md                    # Methodology, design choices, and results
 └── README.md
 ```
 
@@ -62,11 +67,11 @@ The three CSV files contain daily **US zero-coupon bond yields** across 9 maturi
 
 Download and place them in the root directory before running the notebook.
 
-> **Note:** The notebook was originally run on **Google Colab**. Update the file paths at the top of the data loading cell if running locally ( Just have to uncomment out the gdown.download() lines ).
+> **Note:** The notebook was originally run on **Google Colab**. Update the file paths at the top of the data loading cell if running locally (just uncomment the `gdown.download()` lines).
 
 ---
 
 ## Colab Link
 
-The following is the link to the Google Colab File : 
+The following is the link to the Google Colab file:
 [Google Colab](https://colab.research.google.com/drive/1kbeTPe4FXFZGESrfANmJi56Jn_S3FfeE?usp=sharing)
